@@ -1,37 +1,30 @@
 import {
-  ActionCallButton,
-  Card,
-  CardActionCall,
-  CardHeading,
-  CardIcon,
   CardSection,
-  FirstCard,
   Footer,
   Header,
   Heading,
   HeroSection,
   MainWrapper,
-  Logo,
   HeroLeft,
   HeroRight,
   HeroRightImg,
 } from "./App.styled.js";
-
-import logoDark from "./assets/logo-dark.svg";
+import { Button } from "./components/button/Button.jsx";
+import { AdvertCard, Card } from "./components/card/Card.jsx";
 import logoLight from "./assets/logo-light.svg";
 import iconAnimation from "./assets/icon-animation.svg";
 import iconDesign from "./assets/icon-design.svg";
 import iconPhotography from "./assets/icon-photography.svg";
 import iconCrypto from "./assets/icon-crypto.svg";
 import iconBusiness from "./assets/icon-business.svg";
-import imageHeroDesktop from "./assets/image-hero-desktop.png"; 
+import imageHeroDesktop from "./assets/image-hero-desktop.png";
+import { LogoBar } from "./components/logoBar/LogoBar.jsx";
 
 function App() {
   return (
     <MainWrapper>
       <Header>
-        <Logo src={logoDark} alt="skilled logo" />
-        <ActionCallButton>Get Started</ActionCallButton>
+        <LogoBar type='dark'/>
       </Header>
 
       <HeroSection>
@@ -43,69 +36,53 @@ function App() {
             the knowledge you need to live the life you want.
           </p>
 
-          <ActionCallButton>Get Started</ActionCallButton>
+          <Button>Get Started</Button>
         </HeroLeft>
-        <HeroRight><HeroRightImg src={imageHeroDesktop} alt="woman drink hot beverage"/></HeroRight>
+        <HeroRight>
+          <HeroRightImg src={imageHeroDesktop} alt="woman drink hot beverage" />
+        </HeroRight>
       </HeroSection>
       <CardSection>
-        <FirstCard>
-          <p>Check out our most popular courses!</p>
-        </FirstCard>
+        <AdvertCard content="Check out our most popular courses!" />
 
-        <Card>
-          <CardIcon src={iconAnimation} alt="card icon" />
-          <CardHeading>Animation</CardHeading>
-          <p>
-            Learn the latest animation techniques to create stunning motion
-            design and captivate your audience.
-          </p>
-          <CardActionCall>Get Started</CardActionCall>
-        </Card>
+        <Card
+          icon={iconAnimation}
+          heading="Animation"
+          content="Learn the latest animation techniques to create stunning motion design and captivate your audience."
+          href="#"
+        />
 
-        <Card>
-          <CardIcon src={iconDesign} alt="card icon" />
-          <CardHeading>Design</CardHeading>
-          <p>
-            Create beautiful, usable interfaces to help shape the future of how
-            the web looks.
-          </p>
-          <CardActionCall>Get Started</CardActionCall>
-        </Card>
+        <Card
+          icon={iconDesign}
+          heading="Design"
+          content="Create beautiful, usable interfaces to help shape the future of how the web looks."
+          href="#"
+        />
 
-        <Card>
-          <CardIcon src={iconPhotography} alt="card icon" />
-          <CardHeading>Photography</CardHeading>
-          <p>
-            Explore critical fundamentals like lighting, composition, and focus
-            to capture exceptional photos.
-          </p>
-          <CardActionCall>Get Started</CardActionCall>
-        </Card>
+        <Card
+          icon={iconPhotography}
+          heading="Photography"
+          content="Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos."
+          href="#"
+        />
 
-        <Card>
-          <CardIcon src={iconCrypto} alt="card icon" />
-          <CardHeading>Crypto</CardHeading>
-          <p>
-            All you need to know to get started investing in crypto. Go from
-            beginner to advanced with this 54 hour course.
-          </p>
-          <CardActionCall>Get Started</CardActionCall>
-        </Card>
+        <Card
+          icon={iconCrypto}
+          heading="Crypto"
+          content="All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course."
+          href="#"
+        />
 
-        <Card>
-          <CardIcon src={iconBusiness} alt="card icon" />
-          <CardHeading>Business</CardHeading>
-          <p>
-            A step-by-step playbook to help you start, scale, and sustain your
-            business without outside investment.
-          </p>
-          <CardActionCall>Get Started</CardActionCall>
-        </Card>
+        <Card
+          icon={iconBusiness}
+          heading="Business"
+          content="A step-by-step playbook to help you start, scale, and sustain your business without outside investment."
+          href="#"
+        />
       </CardSection>
 
       <Footer>
-        <Logo src={logoLight} alt="skilled logo" />
-        <ActionCallButton>Get Started</ActionCallButton>
+        <LogoBar type='light'/>
       </Footer>
     </MainWrapper>
   );
