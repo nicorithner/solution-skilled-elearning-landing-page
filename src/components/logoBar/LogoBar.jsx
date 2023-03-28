@@ -8,14 +8,14 @@ export const LogoBar = ({type}) => {
     case type === 'dark':
       return (
       <LogoBarDark>
-        <Logo src={logoDark} alt="Skilled logo" />
+        <Logo src={logoLight} alt="Skilled logo" />
         <Button>Get Started</Button>
       </LogoBarDark>
     )
     default:
       return (
       <LogoBarLight>
-        <Logo src={logoLight} alt="Skilled logo" />
+        <Logo src={logoDark} alt="Skilled logo" />
         <Button>Get Started</Button>
       </LogoBarLight>
     )
