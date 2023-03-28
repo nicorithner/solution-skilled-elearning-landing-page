@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import "@fontsource/plus-jakarta-sans";
 
 const GlobalStyles = createGlobalStyle`
 /*
@@ -6,7 +7,7 @@ const GlobalStyles = createGlobalStyle`
 */
 *, *::before, *::after {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 /*
