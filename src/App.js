@@ -1,47 +1,18 @@
-import {
-  CardSection,
-  Footer,
-  Header,
-  Heading,
-  HeroSection,
-  MainWrapper,
-  HeroLeft,
-  HeroRight,
-  HeroRightImg,
-} from "./App.styled.js";
-import { Button } from "./components/button/Button.jsx";
+import { CardSection, MainWrapper } from "./App.styled.js";
 import { AdvertCard, Card } from "./components/card/Card.jsx";
-import logoLight from "./assets/logo-light.svg";
 import iconAnimation from "./assets/icon-animation.svg";
 import iconDesign from "./assets/icon-design.svg";
 import iconPhotography from "./assets/icon-photography.svg";
 import iconCrypto from "./assets/icon-crypto.svg";
 import iconBusiness from "./assets/icon-business.svg";
-import imageHeroDesktop from "./assets/image-hero-desktop.png";
 import { LogoBar } from "./components/logoBar/LogoBar.jsx";
+import { HeroSection } from "./components/heroSection/HeroSection.jsx";
 
 function App() {
   return (
     <MainWrapper>
-      <Header>
-        <LogoBar type='dark'/>
-      </Header>
-
-      <HeroSection>
-        <HeroLeft>
-          <Heading>Maximize skill, minimize budget</Heading>
-
-          <p>
-            Our modern courses across a range of in-demand skills will give you
-            the knowledge you need to live the life you want.
-          </p>
-
-          <Button>Get Started</Button>
-        </HeroLeft>
-        <HeroRight>
-          <HeroRightImg src={imageHeroDesktop} alt="woman drink hot beverage" />
-        </HeroRight>
-      </HeroSection>
+      <LogoBar type="light" />
+      <HeroSection />
       <CardSection>
         <AdvertCard content="Check out our most popular courses!" />
 
@@ -81,9 +52,7 @@ function App() {
         />
       </CardSection>
 
-      <Footer>
-        <LogoBar type='light'/>
-      </Footer>
+      <LogoBar type="dark" />
     </MainWrapper>
   );
 }
