@@ -9,14 +9,14 @@ export const LogoBar = ({type}) => {
       return (
       <LogoBarDark>
         <Logo src={logoLight} alt="Skilled logo" />
-        <ButtonSolidDark>Get Started</ButtonSolidDark>
+        <ButtonGradient2>Get Started</ButtonGradient2>
       </LogoBarDark>
     )
     default:
       return (
       <LogoBarLight>
         <Logo src={logoDark} alt="Skilled logo" />
-        <ButtonGradient2>Get Started</ButtonGradient2>
+        <ButtonSolidDark>Get Started</ButtonSolidDark>
       </LogoBarLight>
     )
   }
