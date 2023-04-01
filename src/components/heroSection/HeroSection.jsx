@@ -1,4 +1,4 @@
-import { Button } from "../button/Button";
+import { ButtonGradient1 } from "../button/Button";
 import {
   Heading,
   HeroWrapper,
@@ -23,7 +23,7 @@ export const HeroSection = () => {
           the knowledge you need to live the life you want.
         </p>
 
-        <Button>Get Started</Button>
+        <ButtonGradient1>Get Started</ButtonGradient1>
       </HeroLeftSegment>
       <HeroRightSegment>
         <HeroImgDesktop src={imageHeroDesktop} alt="woman drink hot beverage" />

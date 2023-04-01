@@ -1,4 +1,4 @@
-import { Button } from "../button/Button";
+import { ButtonSolidDark, ButtonGradient2 } from "../button/Button";
 import { Logo, LogoBarDark, LogoBarLight } from "./LogoBar.styled";
 import logoDark from "../../assets/logo-dark.svg";
 import logoLight from "../../assets/logo-light.svg";
@@ -9,14 +9,14 @@ export const LogoBar = ({type}) => {
       return (
       <LogoBarDark>
         <Logo src={logoLight} alt="Skilled logo" />
-        <Button>Get Started</Button>
+        <ButtonSolidDark>Get Started</ButtonSolidDark>
       </LogoBarDark>
     )
     default:
       return (
       <LogoBarLight>
         <Logo src={logoDark} alt="Skilled logo" />
-        <Button>Get Started</Button>
+        <ButtonGradient2>Get Started</ButtonGradient2>
       </LogoBarLight>
     )
   }
