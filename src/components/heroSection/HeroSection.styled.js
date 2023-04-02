@@ -7,16 +7,17 @@ export const HeroWrapper = styled.section`
   justify-content: space-between;
   align-items: center;
   min-width: 100%;
-  min-height: 80vh;
   padding-left: 165px;
-  border: solid 2px blue;
 `;
+
 export const HeroLeftSegment = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 457px;
   height: auto;
+  margin-top: 162px;
+  margin-bottom: 225px;
 `;
 
 export const HeroHeading = styled(Heading)`
@@ -29,16 +30,18 @@ export const HeroDescription = styled(TextGray)`
 `;
 
 export const HeroRightSegment = styled.div``;
+
 export const HeroImgDesktop = styled.img`
   display: block;
   position: absolute;
-  right: -250px;
-  top: -100px;
+  right: -330px;
+  top: -132px;
 
   @media only screen and (max-width: 768px) {
     display: none;
   }
 `;
+
 export const HeroImgTablet = styled.img`
   display: none;
 
@@ -46,6 +49,7 @@ export const HeroImgTablet = styled.img`
     display: block;
   }
 `;
+
 export const HeroImgMobile = styled.img`
   display: none;
 
