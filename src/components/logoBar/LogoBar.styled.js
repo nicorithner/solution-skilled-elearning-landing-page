@@ -12,6 +12,11 @@ const LogoBar = styled.nav`
     padding: 24px 40px;
   }
 
+  @media only screen and (max-width: 400px) {
+    padding: 16px;
+    max-width: 100%;
+  }
+
 `;
 export const LogoBarDark = styled(LogoBar)`
   background: ${PRIMARY.midnightExpress};

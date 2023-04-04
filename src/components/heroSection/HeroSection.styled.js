@@ -11,6 +11,12 @@ export const HeroWrapper = styled.section`
   @media only screen and (max-width: 768px) and (min-width: 400px) {
     padding-left: 40px;
   }
+
+  @media only screen and (max-width: 400px) {
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 `;
 
 export const HeroLeftSegment = styled.div`
@@ -27,15 +33,24 @@ export const HeroLeftSegment = styled.div`
     margin-top: 100px;
     width: 425px;
   }
+
+  @media only screen and (max-width: 400px) {
+    width: 100%;
+    margin-top: 38px;
+    margin-bottom: 26px;
+  }
 `;
 
 export const HeroHeading = styled(Heading)`
-  margin-bottom: ${29 / 16}rem;
+  margin-bottom: 29px;
 `;
 
 export const HeroDescription = styled(TextGray)`
-  margin-bottom: ${40 / 16}rem;
-  margin-right: ${12 / 16}rem;
+  margin-bottom: 40px;
+  margin-right: 12px;
+  @media only screen and (max-width: 400px) {
+    margin-right: 0;
+  }
 `;
 
 export const HeroRightSegment = styled.div`
@@ -48,6 +63,12 @@ export const HeroRightSegment = styled.div`
     max-width: 400px;
     overflow: hidden;
     margin-left: -100px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    width: 100%;
+    height: fit-content;
+    margin: 0 16px;
   }
 `;
 

@@ -19,9 +19,9 @@ export const Heading = styled.h1`
   line-height: ${71 / 16}rem;
   color: ${PRIMARY.midnightExpress};
 
-  @media only screen and (max-width: 768px) and (min-width: 400px) {
-    font-size: 40px;
-    line-height: 50px;
+  @media only screen and (max-width: 768px) {
+    font-size: ${40 / 16}rem;
+    line-height: ${50 / 16}rem;
   }
 `;
 
@@ -33,7 +33,7 @@ export const TextGray = styled.p`
   line-height: ${28 / 16}rem;
   color: ${NEUTRAL.gray};
 
-  @media only screen and (max-width: 768px) and (min-width: 400px) {
+  @media only screen and (max-width: 768px) {
     font-size: 16px;
     line-height: 26px;
   }                                                                   }
