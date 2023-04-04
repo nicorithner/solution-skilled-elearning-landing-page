@@ -7,6 +7,11 @@ const LogoBar = styled.nav`
   align-items: center;
   width: 100%;
   padding: 24px 165px;
+
+  @media only screen and (max-width: 768px) and (min-width: 400px) {
+    padding: 24px 40px;
+  }
+
 `;
 export const LogoBarDark = styled(LogoBar)`
   background: ${PRIMARY.midnightExpress};
