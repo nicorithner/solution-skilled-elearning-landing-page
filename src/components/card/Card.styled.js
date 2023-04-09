@@ -55,4 +55,9 @@ export const CardActionCall = styled.a`
   font-weight: 700;
   font-size: ${18 / 16}rem;
   line-height: ${28 / 16}rem;
+  cursor: pointer;
+
+  &:hover {
+    color: ${PRIMARY.carnationPink};
+  }
 `;
