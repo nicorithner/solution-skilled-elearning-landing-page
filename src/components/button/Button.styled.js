@@ -19,16 +19,17 @@ const ButtonBase = styled.button`
 `;
 export const ButtonSolid = styled(ButtonBase)`
   background: ${PRIMARY.midnightExpress};
+  z-index: 2;
 
   &:hover {
-    background: ${PRIMARY.chetwodeBlue};
+    background: ${GRADIENTS.whiteTransparency}, ${PRIMARY.chetwodeBlue};
   }
 `;
 export const ButtonGrad1 = styled(ButtonBase)`
-  background: ${GRADIENTS.tomatoPersionRose};
+  background: ${GRADIENTS.tomatoPersianRose};
 
   &:hover {
-    background: ${GRADIENTS.whiteTransparency}, ${GRADIENTS.tomatoPersionRose};
+    background: ${GRADIENTS.whiteTransparency}, ${GRADIENTS.tomatoPersianRose};
   }
 `;
 export const ButtonGrad2 = styled(ButtonBase)`

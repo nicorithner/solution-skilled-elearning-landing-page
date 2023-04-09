@@ -2,13 +2,13 @@ import styled from "styled-components";
 import { PRIMARY, NEUTRAL } from "./constants";
 
 export const MainWrapper = styled.main`
+  display: flex;
+  flex-direction: column;
   max-width: 1440px;
   position: relative;
   margin-right: auto;
   margin-left: auto;
   background-color: ${NEUTRAL.white};
-  /*temp border*/
-  border: 1px solid gray;
 `;
 
 export const Heading = styled.h1`
