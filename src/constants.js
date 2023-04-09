@@ -13,7 +13,7 @@ export const NEUTRAL = {
 export const GRADIENTS = {
   bluePersianRose:
     "linear-gradient(180deg, hsla(237,100%, 64%, 1), hsla(322,87%, 55%, 1))",
-  tomatoPersionRose:
+  tomatoPersianRose:
     "linear-gradient(180deg, hsla(13, 100%, 64%, 1), hsla(322, 87%, 55%, 1))",
   whiteTransparency:
     "linear-gradient(0deg, hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 100%, 0.5))",
