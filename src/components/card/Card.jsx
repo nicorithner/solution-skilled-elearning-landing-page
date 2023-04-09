@@ -1,9 +1,11 @@
+import { TextGray } from "../../App.styled";
 import {
   AdCard,
   CardWrapper,
   CardIcon,
   CardHeading,
   CardActionCall,
+  CardBottomSegment,
 } from "./Card.styled";
 
 export const Card = ({ icon, heading, content, href }) => {
@@ -11,8 +13,10 @@ export const Card = ({ icon, heading, content, href }) => {
     <CardWrapper>
       <CardIcon src={icon} alt="card icon" />
       <CardHeading>{heading}</CardHeading>
-      <p>{content}</p>
-      <CardActionCall hrf={href}>Get Started</CardActionCall>
+      <CardBottomSegment>
+        <TextGray>{content}</TextGray>
+        <CardActionCall hrf={href}>Get Started</CardActionCall>
+      </CardBottomSegment>
     </CardWrapper>
   );
 };
