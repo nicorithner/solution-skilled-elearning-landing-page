@@ -9,10 +9,10 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "gh-pages": "^5.0.0",
+    "gh-pages": "^6.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "styled-components": "^5.3.9",
     "web-vitals": "^2.1.4"
   },
@@ -49,6 +49,19 @@
     "nth-check": "^2.0.1",
     "postcss": "^8.4.31",
     "**/postcss": "^8.4.31",
-    "webpack-dev-server": "^5.2.1"
+    "**/follow-redirects": "^1.15.12",
+    "**/lodash": "^4.17.24",
+    "**/path-to-regexp": "^0.1.13",
+    "**/brace-expansion": "^1.1.13",
+    "**/serialize-javascript": "^7.0.5",
+    "**/node-forge": "^1.4.0",
+    "**/picomatch": "^4.0.4",
+    "**/yaml": "^1.10.3",
+    "**/flatted": "^3.4.2",
+    "**/svgo": "^2.8.1",
+    "**/@tootallnate/once": "^3.0.1",
+    "**/underscore": "^1.13.8",
+    "**/minimatch": "^5.1.8",
+    "**/rollup": "^2.80.0"
   }
 }
